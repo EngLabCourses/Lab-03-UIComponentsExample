@@ -97,7 +97,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/spacing_micro"
                         android:layout_weight="1"
-                        android:text="Another styled Button" />
+                        android:text="Another styled Button. Tap me" />
                 </LinearLayout>
 
                 <CheckBox

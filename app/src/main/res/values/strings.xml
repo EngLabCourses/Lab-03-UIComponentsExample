@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lesson 3</string>
+    <string name="app_name">UI Components Example</string>
     <string name="layouts">Layouts showcase</string>
     <string name="recyclerviewexample">RecyclerView example</string>
     <string name="viewshowcase">View Showcase</string>
