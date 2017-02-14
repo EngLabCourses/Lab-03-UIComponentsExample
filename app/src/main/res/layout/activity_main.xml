@@ -7,6 +7,10 @@
     android:orientation="vertical"
     tools:context="it.eng.courses.android.lesson3.MainActivity">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar" />
+
     <android.support.v7.widget.CardView
         android:id="@+id/layouts"
         android:layout_width="match_parent"

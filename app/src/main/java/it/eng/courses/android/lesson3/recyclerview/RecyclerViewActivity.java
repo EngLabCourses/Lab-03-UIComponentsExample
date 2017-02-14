@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,6 +15,7 @@ import it.eng.courses.android.lesson3.R;
 
 public class RecyclerViewActivity extends AppCompatActivity {
 
+    private Toolbar toolbar;
     private RecyclerView recyclerView;
     private MyAdapter adapter;
     private List<String> items = new ArrayList<>(Arrays.asList("Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio", "Agosto", "Settembre","Ottobre","Novembre","Dicembre"));
@@ -22,6 +25,12 @@ public class RecyclerViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
 
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        if (getSupportActionBar()!=null)
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         recyclerView = (RecyclerView) findViewById(R.id.rv);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(recyclerView.getContext(),LinearLayoutManager.VERTICAL,false);
         adapter = new MyAdapter();
@@ -30,5 +39,15 @@ public class RecyclerViewActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         adapter.setList(items);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

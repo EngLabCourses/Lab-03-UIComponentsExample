@@ -3,4 +3,10 @@
     <string name="layouts">Layouts showcase</string>
     <string name="recyclerviewexample">RecyclerView example</string>
     <string name="viewshowcase">View Showcase</string>
+    <string name="relativelayout">RelativeLayout</string>
+    <string name="relativeLayoutDesc">La posizione di ciascun componente viene espressa relativamente ad altri componenti, o al layout stesso.</string>
+    <string name="linearLayoutDesc">I componenti vengono disposti sequenzialmente. L\'orientamento può essere orizzontale o verticale.</string>
+    <string name="linearlayout">LinearLayout</string>
+    <string name="framelayout">FrameLayout</string>
+    <string name="frameLayoutDesc">Ogni componente è allineato al centro del layout, sovrapponendosi ad altri componenti, se presenti.</string>
 </resources>

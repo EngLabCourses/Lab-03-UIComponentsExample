@@ -3,6 +3,7 @@ package it.eng.courses.android.lesson3;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import it.eng.courses.android.lesson3.layouts.LayoutsActivity;
@@ -10,16 +11,21 @@ import it.eng.courses.android.lesson3.recyclerview.RecyclerViewActivity;
 import it.eng.courses.android.lesson3.views.ViewsActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    View layouts, views,recyclerview;
+
+    private View layouts, views,recyclerview;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         layouts = findViewById(R.id.layouts);
         views = findViewById(R.id.viewshowcase);
         recyclerview = findViewById(R.id.recyclerviewexample);
+
+        setSupportActionBar(toolbar);
 
         layouts.setOnClickListener(this);
         views.setOnClickListener(this);

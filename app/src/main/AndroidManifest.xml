@@ -19,7 +19,10 @@
         <activity
             android:name=".views.ViewsActivity"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".layouts.LayoutsActivity"></activity>
+        <activity android:name=".layouts.LayoutsActivity" />
+        <activity android:name=".layouts.FrameActivity" android:theme="@style/AppThemeWithActionBar"/>
+        <activity android:name=".layouts.LinearActivity"  android:theme="@style/AppThemeWithActionBar"/>
+        <activity android:name=".layouts.RelativeActivity" android:theme="@style/AppThemeWithActionBar"/>
     </application>
 
 </manifest>

@@ -1,124 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_layouts"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    tools:context="it.eng.courses.android.lesson3.layouts.LayoutsActivity">
+    android:orientation="vertical">
 
-    <LinearLayout
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <android.support.v7.widget.CardView style="@style/layoutCardContainerStyle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <android.support.v7.widget.CardView style="@style/layoutCardContainerStyle">
 
-                <ImageView
-                    android:id="@+id/exampleFrameImg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/framelayout" />
+                <RelativeLayout
+                    android:id="@+id/frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/layoutTextTitle"
-                    style="@style/layoutTextTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_normal"
-                    android:layout_marginTop="@dimen/spacing_normal"
-                    android:layout_toRightOf="@+id/exampleFrameImg"
-                    android:text="FrameLayout" />
+                    <ImageView
+                        android:id="@+id/exampleFrameImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/framelayout" />
 
-                <TextView
-                    style="@style/layoutTextDesc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/layoutTextTitle"
-                    android:layout_below="@+id/layoutTextTitle"
-                    android:layout_marginRight="@dimen/spacing_normal"
-                    android:layout_marginTop="@dimen/spacing_micro"
-                    android:text="Ogni componente è allineato al centro del layout, sovrapponendosi ad altri componenti, se presenti." />
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                    <TextView
+                        android:id="@+id/layoutTextTitle"
+                        style="@style/layoutTextTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_normal"
+                        android:layout_toRightOf="@+id/exampleFrameImg"
+                        android:text="@string/framelayout" />
+
+                    <TextView
+                        style="@style/layoutTextDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/layoutTextTitle"
+                        android:layout_below="@+id/layoutTextTitle"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_micro"
+                        android:text="@string/frameLayoutDesc" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
 
-        <android.support.v7.widget.CardView style="@style/layoutCardContainerStyle">
+            <android.support.v7.widget.CardView style="@style/layoutCardContainerStyle">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/exampleImageImg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/linearlayout" />
+                    <ImageView
+                        android:id="@+id/exampleImageImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/linearlayout" />
 
-                <TextView
-                    android:id="@+id/layoutTextTitle"
-                    style="@style/layoutTextTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_normal"
-                    android:layout_marginTop="@dimen/spacing_normal"
-                    android:layout_toRightOf="@+id/exampleImageImg"
-                    android:text="LinearLayout" />
+                    <TextView
+                        android:id="@+id/layoutTextTitle"
+                        style="@style/layoutTextTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_normal"
+                        android:layout_toRightOf="@+id/exampleImageImg"
+                        android:text="@string/linearlayout" />
 
-                <TextView
-                    style="@style/layoutTextDesc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/layoutTextTitle"
-                    android:layout_below="@+id/layoutTextTitle"
-                    android:layout_marginRight="@dimen/spacing_normal"
-                    android:layout_marginTop="@dimen/spacing_micro"
-                    android:text="I componenti vengono disposti sequenzialmente. L'orientamento può essere orizzontale o verticale." />
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                    <TextView
+                        style="@style/layoutTextDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/layoutTextTitle"
+                        android:layout_below="@+id/layoutTextTitle"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_micro"
+                        android:text="@string/linearLayoutDesc" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
-        <android.support.v7.widget.CardView style="@style/layoutCardContainerStyle">
+            <android.support.v7.widget.CardView style="@style/layoutCardContainerStyle">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/exampleRelativeImg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/relativelayout" />
+                    <ImageView
+                        android:id="@+id/exampleRelativeImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/relativelayout" />
 
-                <TextView
-                    android:id="@+id/layoutTextTitle"
-                    style="@style/layoutTextTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_normal"
-                    android:layout_marginTop="@dimen/spacing_normal"
-                    android:layout_toRightOf="@+id/exampleRelativeImg"
-                    android:text="RelativeLayout" />
+                    <TextView
+                        android:id="@+id/layoutTextTitle"
+                        style="@style/layoutTextTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_normal"
+                        android:layout_toRightOf="@+id/exampleRelativeImg"
+                        android:text="@string/relativelayout" />
 
-                <TextView
-                    style="@style/layoutTextDesc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/layoutTextTitle"
-                    android:layout_below="@+id/layoutTextTitle"
-                    android:layout_marginRight="@dimen/spacing_normal"
-                    android:layout_marginTop="@dimen/spacing_micro"
-                    android:text="La posizione di ciascun componente viene espressa relativamente ad altri componenti, o al layout stesso." />
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
-    </LinearLayout>
-</ScrollView>
+                    <TextView
+                        style="@style/layoutTextDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/layoutTextTitle"
+                        android:layout_below="@+id/layoutTextTitle"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_micro"
+                        android:text="@string/relativeLayoutDesc" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
