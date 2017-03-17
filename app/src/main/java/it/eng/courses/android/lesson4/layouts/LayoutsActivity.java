@@ -1,4 +1,4 @@
-package it.eng.courses.android.lesson3.layouts;
+package it.eng.courses.android.lesson4.layouts;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
-import it.eng.courses.android.lesson3.R;
+import it.eng.courses.android.lesson4.R;
 
 public class LayoutsActivity extends AppCompatActivity implements View.OnClickListener {
 

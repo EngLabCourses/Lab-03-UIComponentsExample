@@ -1,4 +1,4 @@
-package it.eng.courses.android.lesson3.recyclerview;
+package it.eng.courses.android.lesson4.recyclerview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import it.eng.courses.android.lesson3.R;
+import it.eng.courses.android.lesson4.R;
 
 public class RecyclerViewActivity extends AppCompatActivity {
 

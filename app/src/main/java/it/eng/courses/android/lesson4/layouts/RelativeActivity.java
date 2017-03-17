@@ -1,4 +1,4 @@
-package it.eng.courses.android.lesson3.layouts;
+package it.eng.courses.android.lesson4.layouts;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import it.eng.courses.android.lesson3.R;
+import it.eng.courses.android.lesson4.R;
 
 public class RelativeActivity extends AppCompatActivity {
 

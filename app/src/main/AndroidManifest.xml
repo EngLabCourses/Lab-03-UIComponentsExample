@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="it.eng.courses.android.lesson3">
+    package="it.eng.courses.android.lesson4">
 
     <application
         android:allowBackup="true"
@@ -8,21 +8,21 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="it.eng.courses.android.lesson4.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".recyclerview.RecyclerViewActivity" />
+        <activity android:name="it.eng.courses.android.lesson4.recyclerview.RecyclerViewActivity" />
         <activity
-            android:name=".views.ViewsActivity"
+            android:name="it.eng.courses.android.lesson4.views.ViewsActivity"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".layouts.LayoutsActivity" />
-        <activity android:name=".layouts.FrameActivity" android:theme="@style/AppThemeWithActionBar"/>
-        <activity android:name=".layouts.LinearActivity"  android:theme="@style/AppThemeWithActionBar"/>
-        <activity android:name=".layouts.RelativeActivity" android:theme="@style/AppThemeWithActionBar"/>
+        <activity android:name="it.eng.courses.android.lesson4.layouts.LayoutsActivity" />
+        <activity android:name="it.eng.courses.android.lesson4.layouts.FrameActivity" android:theme="@style/AppThemeWithActionBar"/>
+        <activity android:name="it.eng.courses.android.lesson4.layouts.LinearActivity"  android:theme="@style/AppThemeWithActionBar"/>
+        <activity android:name="it.eng.courses.android.lesson4.layouts.RelativeActivity" android:theme="@style/AppThemeWithActionBar"/>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package it.eng.courses.android.lesson3.views;
+package it.eng.courses.android.lesson4.views;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import it.eng.courses.android.lesson3.R;
+import it.eng.courses.android.lesson4.R;
 
 public class ViewsActivity extends AppCompatActivity implements View.OnClickListener {
 

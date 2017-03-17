@@ -1,21 +1,22 @@
-package it.eng.courses.android.lesson3.layouts;
+package it.eng.courses.android.lesson4.layouts;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import it.eng.courses.android.lesson3.R;
+import it.eng.courses.android.lesson4.R;
 
-public class LinearActivity extends AppCompatActivity {
+public class FrameActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linear);
+        setContentView(R.layout.activity_frame);
 
         if (getSupportActionBar()!=null)
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        setTitle("Linear Layout, vertical");
+        setTitle("Frame Layout");
     }
 
     @Override

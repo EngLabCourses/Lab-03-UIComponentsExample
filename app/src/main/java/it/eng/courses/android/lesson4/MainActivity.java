@@ -1,4 +1,4 @@
-package it.eng.courses.android.lesson3;
+package it.eng.courses.android.lesson4;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import it.eng.courses.android.lesson3.layouts.LayoutsActivity;
-import it.eng.courses.android.lesson3.recyclerview.RecyclerViewActivity;
-import it.eng.courses.android.lesson3.views.ViewsActivity;
+import it.eng.courses.android.lesson4.layouts.LayoutsActivity;
+import it.eng.courses.android.lesson4.recyclerview.RecyclerViewActivity;
+import it.eng.courses.android.lesson4.views.ViewsActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
