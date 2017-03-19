@@ -43,6 +43,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         String mString = items.get(position);
+
         holder.text.setText(mString);
 
         if (position % 2 == 0) {
